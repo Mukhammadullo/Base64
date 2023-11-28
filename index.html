@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .card {
+        width: 30%;
+        height: 400px;
+        border: 1px solid red;
+        margin: 10px;
+    }
+
+    .avatar {
+        width: 250px;
+        height: 250px;
+        border-radius: 125px;
+    }
+</style>
+
+<body>
+
+    <form class="form">
+        <input type="file" name="file">
+        <input type="text" name="fullname">
+        <input type="text" name="phone">
+        <button type="submit">Add New</button>
+    </form>
+
+
+    <dialog class="dialogEdit">
+        <form class="formEdit">
+
+            <input type="file" name="fileEdit">
+            <input type="text" name="nameEdit">
+            <input type="text" name="phoneEdit">
+            <img src="" class="editPho" alt="">
+
+            <button type="submit">Save</button>
+        </form>
+    </dialog>
+
+    <div class="box"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/main.js" type="module"></script>
+</body>
+
+</html>
