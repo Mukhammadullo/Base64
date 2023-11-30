@@ -5,9 +5,14 @@ let form = document.querySelector(".form")
 let dialogEdit = document.querySelector(".dialogEdit")
 let formEdit = document.querySelector(".formEdit")
 let editPho = document.querySelector(".editPho")
-
+let dialogAdd = document.querySelector(".dialogAdd")
+let addNew = document.querySelector(".addNew")
+addNew.onclick=()=>{
+    dialogAdd.showModal()
+}
 
 // _____________________________________add
+
 form["file"].onchange = (event) => {
     let file = event.target.files[0]
     const reader = new FileReader();
