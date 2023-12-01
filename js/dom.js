@@ -1,4 +1,4 @@
-import { add, editUser } from "./api.js"
+import { add, editUser, delUser } from "./api.js"
 
 let box = document.querySelector(".box")
 let form = document.querySelector(".form")
@@ -89,6 +89,10 @@ function get(newData) {
         let btnDel = document.createElement("button")
         btnDel.innerHTML = "Delete"
         btnDel.classList.add("btnDel")
+        btnDel.onclick = () => {
+            delUser(element.id)
+        }
+
         let card = document.createElement("div")
         card.append(avatar, fullname, phone, btnEdit, btnDel)
         card.classList.add("card")

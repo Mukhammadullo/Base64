@@ -34,4 +34,15 @@ async function editUser(id, elem) {
     }
 }
 
-export { getData, add , editUser}
+
+// del________________________________________________
+async function delUser(id) {
+    try {
+        let { data } = await axios.delete(`${API}/${id}`)
+        getData()
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+export { getData, add, editUser,delUser }
