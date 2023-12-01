@@ -140,3 +140,22 @@ body {
     border-radius: 8px;
     border: none;
 }
+
+
+/* btnCancel */
+.btnCancel {
+    width: 80px;
+    height: 80px;
+    font-size: 46px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: transparent;
+border:none;
+}
+
+/* top */
+.top{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid red;
+    margin-bottom: 10px;
+}

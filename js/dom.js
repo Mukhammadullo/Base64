@@ -7,6 +7,10 @@ let formEdit = document.querySelector(".formEdit")
 let editPho = document.querySelector(".editPho")
 let dialogAdd = document.querySelector(".dialogAdd")
 let addNew = document.querySelector(".addNew")
+let btnCancel = document.querySelector(".btnCancel")
+btnCancel.onclick = () => {
+    dialogAdd.close()
+}
 addNew.onclick = () => {
     dialogAdd.showModal()
 }
