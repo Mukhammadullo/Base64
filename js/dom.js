@@ -7,7 +7,7 @@ let formEdit = document.querySelector(".formEdit")
 let editPho = document.querySelector(".editPho")
 let dialogAdd = document.querySelector(".dialogAdd")
 let addNew = document.querySelector(".addNew")
-addNew.onclick=()=>{
+addNew.onclick = () => {
     dialogAdd.showModal()
 }
 
@@ -73,10 +73,11 @@ function get(newData) {
 
         let fullname = document.createElement("h1")
         fullname.innerHTML = element.fullname
+        fullname.classList.add("fullname")
 
         let phone = document.createElement("h3")
         phone.innerHTML = element.phone
-
+        phone.classList.add("phone")
 
         let btnEdit = document.createElement("button")
         btnEdit.innerHTML = "Edit"
