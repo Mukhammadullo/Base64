@@ -81,13 +81,14 @@ function get(newData) {
 
         let btnEdit = document.createElement("button")
         btnEdit.innerHTML = "Edit"
+        btnEdit.classList.add("btnEdit")
         btnEdit.onclick = () => {
             editFun(element)
         }
 
         let btnDel = document.createElement("button")
         btnDel.innerHTML = "Delete"
-
+        btnDel.classList.add("btnDel")
         let card = document.createElement("div")
         card.append(avatar, fullname, phone, btnEdit, btnDel)
         card.classList.add("card")
